@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>redux-ui-router sample</title>
+
+  <style>
+    ul.nav {
+      padding-left: 0;
+    }
+    ul.nav li {
+      list-style: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body ng-app="app">
+
+<ul class="nav">
+  <li><a ui-sref="index.home">Home</a></li>
+  <li><a ui-sref="index.data">Data</a></li>
+</ul>
+
+<div ui-view="main"></div>
+
+<script src="/static/bundle.js"></script>
+</body>
+</html>
